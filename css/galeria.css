@@ -1,0 +1,184 @@
+@font-face { 
+    font-family: Yanone Kaffeesatz; 
+      src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
+      src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+  } 
+  
+  html { 
+    height: 100%;
+  }
+  
+  *{
+    padding: 0px; /*Espacio que hay entre una etiqueta y el contenido de su orden*/
+    margin: 0px; /*Espacio que hay entre una etiqueta y otra (etiquetas adyacentes), sea arriba, abajo o a los lados*/
+    box-sizing: border-box; /*hace que el ancho y alto de los elementos incluyan el padding y el borde, en lugar de agregarlos al tamaño total. Esto evita que los elementos se desborden o se comporten de manera inesperada. */
+  
+  }
+  
+  p{
+    margin-bottom: 14px; /* Espaciado inferior entre los párrafos */
+    text-align: justify; /* Justificar el texto en los párrafos */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fuente de la página*/
+    font-size: 15px;
+  }
+  
+  ol li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fuente de la página*/
+    font-size: 15px;
+  }
+    
+  article, aside, figure, footer, header, hgroup, nav, section { 
+    display:block;
+  }
+  
+  
+  body { 
+    font: normal .8em arial, sans-serif;
+    background: #C4E9E8 url(../images/back.png) repeat-x;
+    color: #555;
+  }
+  
+  p{
+    margin-bottom: 14px; /* Espaciado inferior entre los párrafos */
+    text-align: justify; /* Justificar el texto en los párrafos */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fuente de la página*/
+    font-size: 15px;
+  }
+  
+  #container { 
+    background: transparent url(../images/grass.png) repeat-x bottom;
+  }
+  
+  #main{
+    position: relative;
+    width: 1050px;
+    background-color: #FFF;
+    border: initial; /* Borde inicial apenas visible */
+    margin: 0px auto; /* Margen automático para centrar el contenedor */
+    border-radius: 10px; /* Establece un radio de 10 píxeles en todas las esquinas */
+  }
+  
+  header{
+    margin: 5px 20px 0px 20px;
+    position: relative;
+  }
+  
+  .img-header {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    height: 100%; /* Altura del 100% del contenedor padre */
+    object-fit: cover; /* Escalar y recortar la imagen para que cubra todo el espacio disponible */
+  }
+  
+  nav{
+    background-color: #53C7FD;
+    border-top-right-radius: 10px; /* Establece un radio de 10 píxeles en todas las esquinas */
+    border-top-left-radius: 10px; /* Establece un radio de 10 píxeles en todas las esquinas */
+    margin: 0px 20px 1px 20px;
+  }
+  
+  nav a{
+    text-decoration: none; /* Elimina la línea subrayada */
+    color: white;
+    padding: 15px; /* Espaciado interno de los enlaces en la barra de navegación */
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  
+  nav a:hover {
+    color: #E5017D; /* Cambia el color de la letra a rojo cuando se pasa el mouse sobre un enlace */
+  }
+  
+  
+  /* Estilo del submenú desplegable */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #53C7FD;
+    color: #FFF;
+    min-width: 200px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #principalcontent h1{
+        width: 100%; /* Ancho del contenido principal al 100% del contenedor */
+        color: #E5017D;
+        font-size: 35px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        margin: 20px 20px;
+        text-align: center;
+    }
+
+    #principalcontent h2{
+        width: 100%; /* Ancho del contenido principal al 100% del contenedor */
+        color: #555;
+        font-size: 20px;
+        margin: 1px 0px 10px 0px;
+        text-align: center;
+    }
+    
+    
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Crea 3 columnas por fila */
+        grid-gap: 10px;
+        /* Espacio entre las imágenes */
+        max-width: 100%;
+        /* Ocupa todo el ancho disponible */
+        margin: 0 20px;
+        /* Centra el grid horizontalmente */
+    }
+    
+    .item {
+        overflow: hidden;
+        /* Evita que las imágenes sobresalgan de los contenedores */
+    }
+    
+    .item img {
+        width: 100%;
+        /* Las imágenes ocupan el 100% del espacio disponible en su contenedor */
+        height: auto;
+        /* Mantiene la relación de aspecto original de las imágenes */
+    }
+
+
+  /* Estilos para el pie de página */
+footer{
+    clear: both; /* Borra ambos flotantes */
+    height: 70px;
+    width: 1050px;
+    margin: 0px 0px 1px 0px;
+    text-align: center; /* Centra el texto en el pie de página */
+    color: #fff;
+    background-color: #53C7FD; /* Fondo del pie de página */
+    border-bottom-right-radius: 10px; /* Establece un radio de 10 píxeles en todas las esquinas */
+    border-bottom-left-radius: 10px; /* Establece un radio de 10 píxeles en todas las esquinas */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+  }
+  
+  /* Estilos para los enlaces en el pie de página */
+  footer a{
+    color: white;
+    padding: 10px 15px; /* Espaciado interno de los enlaces en el pie de página */
+    border-right: 1.5px solid #fff; /* Borde derecho entre los enlaces en el pie de página */
+    padding-bottom: 0px; /* Espaciado inferior de los enlaces en el pie de página */
+    padding-top: 0px; /* Espaciado superior de los enlaces en el pie de página */
+    line-height: 35px; /* Centra verticalmente el contenido en relación con la altura */
+  }
+  
+  footer p{
+    text-align: center; /* Centra el texto en el pie de página */
+  }
+  
+  footer a:last-child {
+    border-right: none; /* Elimina el borde derecho para el último enlace */
+  }
